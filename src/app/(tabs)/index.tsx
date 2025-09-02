@@ -1,12 +1,13 @@
-import { StyleSheet ,Text, View } from 'react-native';
+import { View } from 'react-native';
+import products from '@/assets/data/products';
+import ProductListItem from '@/src/components/ProductListItem';
 
-
-
-export default function TabOneScreen() {
+export default function MenuScreen() {
   return (
-    <View className='flex-1 items-center justify-center bg-blue-500'>
-      <Text>Pizza Peperoni</Text>
-      <Text>$12.99</Text>
+    <View>
+      {products.map((product) => (
+        <ProductListItem key={product.id} {...product} />
+      ))}
     </View>
   );
 }
