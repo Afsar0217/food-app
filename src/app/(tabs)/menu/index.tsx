@@ -6,7 +6,7 @@ import ProductListItem from "@/src/components/ProductListItem";
 export default function MenuScreen() {
   return (
     <View>
-      <Stack.Screen options={{ title: "Menu" }} />
+      
       <FlatList
         data={products}
         renderItem={({ item }) => <ProductListItem {...item} />}
