@@ -6,6 +6,7 @@ import { Link } from "expo-router";
 import { defaultPizzaImage } from "./ProductListItem";
 import { FontAwesome } from "@expo/vector-icons";
 import { useCart } from "../providers/CartProvider";
+import Button from "./Button";
 
 type CartListItemProps = {
   cartItem: CartItem;
@@ -48,7 +49,9 @@ const CartListItem = ({ cartItem }: CartListItemProps) => {
           style={{ padding: 5 }}
         />
       </View>
+
     </View>
+      
   );
 };
 
